@@ -1,0 +1,115 @@
+footer {
+    background: $-primary-dark;
+    padding: 81px 0px 70px 0px;
+
+    .sign-up {
+        @include flex;
+        @include justify-center;
+
+        .sign-title {
+            font-size: 40px;
+            line-height: 40px;
+            color: #fff;
+            margin-top: 28px;
+            font-family: 'Heebo-Regular';
+            font-weight: bold;
+            line-height: 1;
+            margin-bottom: 16px;
+
+            @include mq($until: mobileLarge) {
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .sign {
+        @include flex;
+        @include justify-center;
+        margin-left: 28px;
+        gap: 13px;
+        margin-bottom: 45px;
+
+        @include mq($until: tablet) {
+            display: grid;
+            margin-left: 0px;
+        }
+
+        a.btn.solid.submit {
+            width: 136px;
+            height: 45px;
+            margin: 0px;
+            padding: 14px 40px 12px 41px;
+            border-radius: 22.5px;
+            float: none;
+            @include mq($until: tablet) {
+                width: 100%;
+            }
+        }
+
+        
+
+        input.input {
+            width: 379px;
+            height: 45px;
+            padding: 19px;
+
+            @include mq($until: tablet) {
+                width: 260px;
+            }
+        }
+    }
+
+    .Camping .slick-slide{
+        margin: 0px 40px;
+
+        @include mq($until: mobileLarge) {
+            margin: 0px 20px;
+        }
+
+        .Camping-slide{
+            img{
+                &.camp-img{
+                    width: 98px;
+                }
+            }
+        }
+    }
+
+    .accordion-block{
+        border-bottom: 0px solid #fff;
+        @include mq($until: tablet) {
+            border-bottom: 1px solid $-accent;
+        }
+    }
+
+    .f-line{
+        @include flex;
+        @include justify-center;
+        margin-bottom: 56px;
+        
+        .footer-line {
+            @include flex;
+            @include justify-center;
+            height: 1px;
+            width: 500px;
+            background:$-accent;
+            text-align: center;
+            @include mq($until: mobileLarge) {
+                display: none;
+            }
+        }
+    }
+
+    .Materials {
+        text-align: center;
+        font-size: 10px;
+        color: $-accent;
+        margin-top: 32px;
+    }
+}
+
+
+
+
+

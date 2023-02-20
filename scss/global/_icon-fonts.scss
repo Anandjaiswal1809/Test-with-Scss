@@ -1,0 +1,477 @@
+// ICON Fonts CSS
+
+@font-face {
+  font-family: 'treated-icon';
+  src:  url(#{$fontPath}/treated-icon.eot?y5ul3l);
+  src:  url(#{$fontPath}/treated-icon.eot?y5ul3l#iefix) format('embedded-opentype'),
+    url(#{$fontPath}/treated-icon.ttf?y5ul3l) format('truetype'),
+    url(#{$fontPath}/treated-icon.woff?y5ul3l) format('woff'),
+    url(#{$fontPath}/treated-icon.svg?y5ul3l#treated-icon) format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'treated-icon' !important;
+  // speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-spray:before {
+  content: "\e993";
+}
+.icon-sachet:before {
+  content: "\e994";
+}
+.icon-upi:before {
+  content: "\e992";
+}
+.icon-card-back:before {
+  content: "\e991";
+}
+.icon-price-plan:before {
+  content: "\e990";
+}
+.icon-tiktok:before {
+  content: "\e98f";
+}
+.icon-linkedin:before {
+  content: "\e98e";
+}
+.icon-add-thin:before {
+  content: "\e98b";
+}
+.icon-add-thik:before {
+  content: "\e98c";
+}
+.icon-backlink-thik:before {
+  content: "\e98d";
+}
+.icon-cancel-bold:before {
+  content: "\e989";
+}
+.icon-checkmark-bold:before {
+  content: "\e98a";
+}
+.icon-attachment:before {
+  content: "\e987";
+}
+.icon-delivery3:before {
+  content: "\e982";
+}
+.icon-blood-pressure:before {
+  content: "\e91a";
+}
+.icon-card-payment:before {
+  content: "\e980";
+}
+.icon-dashboard:before {
+  content: "\e981";
+}
+.icon-informative:before {
+  content: "\e983";
+}
+.icon-messaging:before {
+  content: "\e984";
+}
+.icon-newsletter:before {
+  content: "\e985";
+}
+.icon-peak-flow:before {
+  content: "\e986";
+}
+.icon-Successful:before {
+  content: "\e988";
+}
+.icon-reference:before {
+  content: "\e97f";
+}
+.icon-add-user:before {
+  content: "\e900";
+}
+.icon-add-card:before {
+  content: "\e901";
+}
+.icon-add-location:before {
+  content: "\e902";
+}
+.icon-after-care:before {
+  content: "\e903";
+}
+.icon-alerts:before {
+  content: "\e904";
+}
+.icon-allergy:before {
+  content: "\e905";
+}
+.icon-angle-down:before {
+  content: "\e906";
+}
+.icon-angle-down-bold:before {
+  content: "\e907";
+}
+.icon-angle-left:before {
+  content: "\e908";
+}
+.icon-angle-left-bold:before {
+  content: "\e909";
+}
+.icon-angle-right:before {
+  content: "\e90a";
+}
+.icon-angle-right-bold:before {
+  content: "\e90b";
+}
+.icon-angle-up:before {
+  content: "\e90c";
+}
+.icon-angle-up-bold:before {
+  content: "\e90d";
+}
+.icon-arrow-down:before {
+  content: "\e90e";
+}
+.icon-arrow-left:before {
+  content: "\e90f";
+}
+.icon-arrow-right:before {
+  content: "\e910";
+}
+.icon-arrow-up:before {
+  content: "\e911";
+}
+.icon-article:before {
+  content: "\e912";
+}
+.icon-bank:before {
+  content: "\e913";
+}
+.icon-best-pill:before {
+  content: "\e914";
+}
+.icon-calendar1:before {
+  content: "\e915";
+}
+.icon-calendar2:before {
+  content: "\e916";
+}
+.icon-cancel:before {
+  content: "\e917";
+}
+.icon-cancel-location:before {
+  content: "\e918";
+}
+.icon-capsule:before {
+  content: "\e919";
+}
+.icon-card-approv:before {
+  content: "\e91b";
+}
+.icon-card-decline:before {
+  content: "\e91c";
+}
+.icon-care:before {
+  content: "\e91d";
+}
+.icon-check:before {
+  content: "\e91e";
+}
+.icon-checkmark1:before {
+  content: "\e91f";
+}
+.icon-checkmark2:before {
+  content: "\e920";
+}
+.icon-close:before {
+  content: "\e921";
+}
+.icon-comparison1:before {
+  content: "\e922";
+}
+.icon-comparison2:before {
+  content: "\e923";
+}
+.icon-conditions:before {
+  content: "\e924";
+}
+.icon-cream:before {
+  content: "\e925";
+}
+.icon-delete:before {
+  content: "\e926";
+}
+.icon-delivery:before {
+  content: "\e927";
+}
+.icon-disability:before {
+  content: "\e928";
+}
+.icon-discount:before {
+  content: "\e929";
+}
+.icon-dna:before {
+  content: "\e92a";
+}
+.icon-doctor:before {
+  content: "\e92b";
+}
+.icon-document:before {
+  content: "\e92c";
+}
+.icon-download:before {
+  content: "\e92d";
+}
+.icon-edit:before {
+  content: "\e92e";
+}
+.icon-email1:before {
+  content: "\e92f";
+}
+.icon-email2:before {
+  content: "\e930";
+}
+.icon-facebook:before {
+  content: "\e931";
+}
+.icon-faq:before {
+  content: "\e932";
+}
+.icon-female:before {
+  content: "\e933";
+}
+.icon-female-sign:before {
+  content: "\e934";
+}
+.icon-filled-thumb-down:before {
+  content: "\e935";
+}
+.icon-filled-thumb-up:before {
+  content: "\e936";
+}
+.icon-find-document:before {
+  content: "\e937";
+}
+.icon-gel:before {
+  content: "\e938";
+}
+.icon-health:before {
+  content: "\e939";
+}
+.icon-height:before {
+  content: "\e93a";
+}
+.icon-hide:before {
+  content: "\e93b";
+}
+.icon-home:before {
+  content: "\e93c";
+}
+.icon-id-card:before {
+  content: "\e93d";
+}
+.icon-info:before {
+  content: "\e93e";
+}
+.icon-inhaler:before {
+  content: "\e93f";
+}
+.icon-injection:before {
+  content: "\e940";
+}
+.icon-instagram:before {
+  content: "\e941";
+}
+.icon-law:before {
+  content: "\e942";
+}
+.icon-link:before {
+  content: "\e943";
+}
+.icon-location:before {
+  content: "\e944";
+}
+.icon-lock:before {
+  content: "\e945";
+}
+.icon-logout:before {
+  content: "\e946";
+}
+.icon-male:before {
+  content: "\e947";
+}
+.icon-male-sign:before {
+  content: "\e948";
+}
+.icon-medication:before {
+  content: "\e949";
+}
+.icon-message:before {
+  content: "\e94a";
+}
+.icon-mobile-phone:before {
+  content: "\e94b";
+}
+.icon-muse:before {
+  content: "\e94c";
+}
+.icon-next-payment:before {
+  content: "\e94d";
+}
+.icon-note:before {
+  content: "\e94e";
+}
+.icon-notification:before {
+  content: "\e94f";
+}
+.icon-other:before {
+  content: "\e950";
+}
+.icon-partnership:before {
+  content: "\e951";
+}
+.icon-patch:before {
+  content: "\e952";
+}
+.icon-payment:before {
+  content: "\e953";
+}
+.icon-phone:before {
+  content: "\e954";
+}
+.icon-phone-mail:before {
+  content: "\e955";
+}
+.icon-pill:before {
+  content: "\e956";
+}
+.icon-play:before {
+  content: "\e957";
+}
+.icon-powder:before {
+  content: "\e958";
+}
+.icon-preference:before {
+  content: "\e959";
+}
+.icon-prep:before {
+  content: "\e95a";
+}
+.icon-print:before {
+  content: "\e95b";
+}
+.icon-recycle:before {
+  content: "\e95c";
+}
+.icon-registered-pharmacy:before {
+  content: "\e95d";
+}
+.icon-reorder:before {
+  content: "\e95e";
+}
+.icon-ring:before {
+  content: "\e95f";
+}
+.icon-rx-prescription:before {
+  content: "\e960";
+}
+.icon-sand-clock:before {
+  content: "\e961";
+}
+.icon-schedule:before {
+  content: "\e962";
+}
+.icon-search-left:before {
+  content: "\e963";
+}
+.icon-search-right:before {
+  content: "\e964";
+}
+.icon-secure1:before {
+  content: "\e965";
+}
+.icon-secure2:before {
+  content: "\e966";
+}
+.icon-secure-check:before {
+  content: "\e967";
+}
+.icon-seen:before {
+  content: "\e968";
+}
+.icon-setting:before {
+  content: "\e969";
+}
+.icon-speech:before {
+  content: "\e96a";
+}
+.icon-star:before {
+  content: "\e96b";
+}
+.icon-stethoscope:before {
+  content: "\e96c";
+}
+.icon-surgery:before {
+  content: "\e96d";
+}
+.icon-tablets:before {
+  content: "\e96e";
+}
+.icon-take-pill:before {
+  content: "\e96f";
+}
+.icon-thumb-down:before {
+  content: "\e970";
+}
+.icon-thumb-up:before {
+  content: "\e971";
+}
+.icon-time:before {
+  content: "\e972";
+}
+.icon-treatment-option:before {
+  content: "\e973";
+}
+.icon-twitter:before {
+  content: "\e974";
+}
+.icon-unlock:before {
+  content: "\e975";
+}
+.icon-upload:before {
+  content: "\e976";
+}
+.icon-user:before {
+  content: "\e977";
+}
+.icon-viagra:before {
+  content: "\e978";
+}
+.icon-video:before {
+  content: "\e979";
+}
+.icon-video-hide:before {
+  content: "\e97a";
+}
+.icon-warning:before {
+  content: "\e97b";
+}
+.icon-weight-loss:before {
+  content: "\e97c";
+}
+.icon-what-is-ed:before {
+  content: "\e97d";
+}
+.icon-wine:before {
+  content: "\e97e";
+}

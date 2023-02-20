@@ -1,0 +1,316 @@
+@import "common";
+
+.bold {
+    font-weight: 600;
+}
+
+.extra-bold {
+    font-weight: 700;
+}
+
+.z-index-5 {
+    z-index: 5;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.text-color {
+    &-60 {
+        color: rgba($-primary, 0.6);
+    }
+
+    &-80 {
+        color: rgba($-primary, 0.8);
+    }
+}
+
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 30px;
+
+    @include mq($until: tablet) {
+        margin-right: 20px;
+    }
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 30px;
+
+    @include mq($until: tablet) {
+        margin-left: 20px;
+    }
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rounded {
+    @include border-radius(10px !important);
+}
+
+.spacing-X {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    @include mq($until: tablet) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .legal-drawer & {
+        padding: 0 !important;
+    }
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.p-20 {
+    padding: 20px !important;
+}
+
+.mt-10,
+.my-10 {
+    margin-top: 10px !important;
+}
+
+.mb-10,
+.my-10 {
+    margin-bottom: 10px !important;
+}
+
+.mt-20,
+.my-20 {
+    margin-top: 20px !important;
+}
+
+.mb-20,
+.my-20 {
+    margin-bottom: 20px !important;
+}
+
+.mt-30,
+.my-30 {
+    margin-top: 30px !important;
+}
+
+.mb-30,
+.my-30 {
+    margin-bottom: 30px !important;
+}
+
+.mt-40,
+.my-40 {
+    margin-top: 40px !important;
+}
+
+.mt-50,
+.my-50 {
+    margin-top: 50px !important;
+}
+
+.mb-40,
+.my-40 {
+    margin-bottom: 40px !important;
+}
+
+.mr-auto,
+.mx-auto {
+    margin-right: auto !important;
+}
+
+.ml-auto,
+.mx-auto {
+    margin-left: auto !important;
+}
+
+.mt-auto,
+.my-auto {
+    margin-top: auto !important;
+}
+
+.mb-auto,
+.my-auto {
+    margin-bottom: auto !important;
+}
+
+.mr-5,
+.mx-5 {
+    margin-right: 5px !important;
+}
+
+.ml-5,
+.mx-5 {
+    margin-left: 5px !important;
+}
+
+.pr-58 {
+    padding-right: 58px;
+}
+
+.font {
+    &Regular {
+        @include fontRegular;
+    }
+
+    &Bold {
+        @include fontBold;
+    }
+
+    &RegularItalic {
+        @include fontRegularItalic;
+    }
+
+    &Light {
+        @include fontLight;
+    }
+
+    &Simula {
+        @include fontSimula;
+    }
+}
+
+// .border-all .border-left
+//$sides: top, right, bottom, left;
+.border {
+    &-all {
+        border: 1px solid;
+    }
+
+    &-left {
+        border-left: 1px solid;
+    }
+
+    &-right {
+        border-right: 1px solid;
+    }
+
+    &-top {
+        border-top: 1px solid;
+    }
+
+    &-bottom {
+        border-bottom: 1px solid;
+    }
+}
+
+.bg-transparent {
+    background: transparent !important;
+}
+
+// colors classes 
+//.text-primary, .text-orange, .border-secondary, .bg-saffron
+$colors: (
+    primary: $-primary,
+    primary-60 : #7E7E84,
+    // secondary: $-secondary,
+    saffron: $-saffron,
+    orange: $-orange,
+    stonegray: $-stoneGray,
+    green: $-green,
+    white: $-accent,
+    blue-light: $-secondary-50,
+    orange-light: $-orange-60,
+
+);
+
+@each $name,
+$val in $colors {
+    .text-#{$name} {
+        color: $val  !important;
+    }
+
+    .border-#{$name} {
+        border-color: $val  !important;
+    }
+
+    .bg-#{$name} {
+        background: $val  !important;
+    }
+}
+
+
+// .font-14px, .font-16px, .font-18px 
+$fonts : 12px,
+14px,
+16px,
+18px,
+20px;
+
+@each $font in $fonts {
+    .font-#{$font} {
+        font-size: $font;
+    }
+}
+
+.text {
+    &-left {
+        text-align: left;
+    }
+
+    &-center {
+        text-align: center;
+    }
+
+    &-right {
+        text-align: right;
+    }
+
+    &-justify {
+        text-align: justify;
+    }
+}
+
+@include mq($until: tablet) {
+    .text-sm {
+        &-left {
+            text-align: left;
+        }
+
+        &-center {
+            text-align: center;
+        }
+
+        &-right {
+            text-align: right;
+        }
+    }
+}
+
+.desktop-hide {
+    @include mq($from: tablet) {
+        display: none;
+    }
+}
+
+.mobile-hide {
+    @include mq($until: tablet) {
+        display: none;
+    }
+}
+
+.d-flex {
+    @include flex;
+}
+
+.justify-space-between {
+    @include justify-space-between;
+}
+
+.justify-flex-end {
+    @include justify-flex-end;
+}

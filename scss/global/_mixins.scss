@@ -1,0 +1,345 @@
+@mixin border-radius($radius...) {
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+
+
+@mixin box-shadow($shadows...) {
+	-o-box-shadow: $shadows;
+	-ms-box-shadow: $shadows;
+	-moz-box-shadow: $shadows;
+	-webkit-box-shadow: $shadows;
+	box-shadow: $shadows;
+}
+
+// @mixin text-shadow($txt-shadow...) {
+//   -o-text-shadow: $txt-shadow;
+//   -ms-text-shadow: $txt-shadow;
+//   -moz-text-shadow: $txt-shadow;
+//   -webkit-text-shadow: $txt-shadow;
+//   text-shadow: $txt-shadow;
+// }
+@mixin transition($transition...) {
+	-o-transition: $transition;
+	-ms-transition: $transition;
+	-moz-transition: $transition;
+	-webkit-transition: $transition;
+	transition: $transition;
+}
+
+// @mixin linear-gradient($gradient...) {
+// 	background: -moz-linear-gradient($gradient);
+// 	background: -ms-linear-gradient($gradient);
+// 	background: -o-linear-gradient($gradient);
+// 	background: -webkit-linear-gradient($gradient);
+// 	background: linear-gradient($gradient);
+// }
+
+@mixin radial-gradient($radial-gradient...) {
+	background: -o-radial-gradient($radial-gradient);
+	background: -webkit-radial-gradient($radial-gradient);
+	background: radial-gradient($radial-gradient);
+}
+
+@mixin clip-path($circle) {
+	-webkit-clip-path: $circle;
+	clip-path: $circle;
+}
+
+@mixin filter($blur) {
+	-webkit-filter: $blur;
+	filter: $blur;
+}
+
+@mixin transform ($origin) {
+	-moz-transform: $origin;
+	-o-transform: $origin;
+	-ms-transform: $origin;
+	-webkit-transform: $origin;
+	transform: $origin;
+}
+
+// @mixin transform-origin ($origin){
+// 	  -webkit-transform-origin: $origin;
+// 	  -moz-transform-origin: $origin;
+// 	  -o-transform-origin: $origin;
+// 	  transform-origin: $origin;
+// }
+
+@mixin keyframes($animation-name) {
+	@-webkit-keyframes #{$animation-name} {
+		@content;
+	}
+
+	@-moz-keyframes #{$animation-name} {
+		@content;
+	}
+
+	@-ms-keyframes #{$animation-name} {
+		@content;
+	}
+
+	@-o-keyframes #{$animation-name} {
+		@content;
+	}
+
+	@keyframes #{$animation-name} {
+		@content;
+	}
+}
+
+@mixin animation($str...) {
+	-webkit-animation: #{$str};
+	-moz-animation: #{$str};
+	-ms-animation: #{$str};
+	-o-animation: #{$str};
+	animation: #{$str};
+}
+
+@mixin animation-delay($delay) {
+	-webkit-animation-delay: $delay;
+	animation-delay: $delay;
+}
+
+@mixin placeholder {
+	&::-moz-placeholder {
+		@content;
+	}
+
+	&:-moz-placeholder {
+		@content;
+	}
+
+	&:-ms-input-placeholder {
+		@content;
+	}
+
+	&::-ms-input-placeholder {
+		@content;
+	}
+
+	&::-webkit-input-placeholder {
+		@content;
+	}
+
+	&::placeholder {
+		@content;
+	}
+}
+
+// flex properties 
+@mixin flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+@mixin inline-flex {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+}
+
+@mixin justify-space-between {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+@mixin flex1 {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+@mixin flex-none {
+	-webkit-box-flex: 0;
+	-ms-flex: none;
+	flex: none;
+}
+
+@mixin flex-wrap {
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+@mixin flex-no-wrap {
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+@mixin justify-center {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+@mixin justify-flex-start {
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+
+@mixin justify-flex-end {
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+
+@mixin justify-center-unset {
+	-webkit-box-pack: unset;
+	-ms-flex-pack: unset;
+	justify-content: unset;
+}
+
+@mixin align-center {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+@mixin align-baseline {
+	-webkit-box-align: baseline;
+	-ms-flex-align: baseline;
+	align-items: baseline;
+}
+
+@mixin align-start {
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+
+@mixin align-end {
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+}
+
+@mixin align-stretch {
+	-webkit-box-align: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+}
+
+@mixin align-self-start {
+	-ms-flex-item-align: start;
+	align-self: flex-start;
+}
+
+@mixin align-self-end {
+	-ms-flex-item-align: end;
+	align-self: flex-end;
+}
+
+@mixin align-self-center {
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+
+@mixin align-content-center {
+	-ms-flex-line-pack: center;
+	align-content: center;
+}
+
+@mixin unselectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+
+@mixin flex-grow-1 {
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+@mixin flex-flow-column-wrap {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column wrap;
+	flex-flow: column wrap;
+}
+
+@mixin flex-direction-column {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+@mixin flex-column-reverse {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: reverse;
+	-ms-flex-direction: column-reverse;
+	flex-direction: column-reverse;
+}
+
+@mixin flex-direction-row {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
+@mixin flex-row-reverse {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
+}
+
+// Grid properties 
+
+@mixin grid {
+	display: -ms-grid;
+	display: grid;
+}
+
+@mixin scrollbar {
+	&::-webkit-scrollbar-track {
+		background: none;
+		box-shadow: none;
+	}
+
+	&::-webkit-scrollbar {
+		width: 4px;
+		height: 4px;
+		background: rgba($-primary, .1);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-right: 4px solid rgba($-primary, .3);
+		border-bottom: 4px solid rgba($-primary, .3);
+		border-radius: 4px;
+		background: none;
+	}
+}
+
+
+@mixin fontRegular {
+	font-family: 'Aeonik', Arial, sans-serif;
+}
+
+@mixin fontBold {
+	font-family: 'aeonikbold', Arial, sans-serif;
+	font-weight: 700;
+}
+
+@mixin fontRegularItalic {
+	font-family: 'aeonikregular-italic', Arial, sans-serif;
+}
+
+@mixin fontLight {
+	font-family: 'aeoniklight', Arial, sans-serif;
+}
+
+@mixin fontSimula {
+	font-family: 'Simula', Arial, sans-serif;
+	font-weight: 400;
+}

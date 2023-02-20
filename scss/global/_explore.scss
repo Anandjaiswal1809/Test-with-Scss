@@ -1,0 +1,97 @@
+section{
+    &.explore {
+        @include flex;
+        @include justify-center;
+        position: relative;
+
+        img
+        {
+            &.explore-img {
+                width: 1360px;
+                height: 735px;
+                margin: 0% auto;
+
+                @include mq($until: mobileLarge) {
+                    height: 255px;
+                }
+            }
+        }
+
+        .explore-bg{
+            width: 890px;
+            background-color: rgba(18, 139, 87, 0.8);
+            margin: 0% auto;
+            @include flex;
+            @include justify-center;
+            color: $-accent;
+            position: absolute;
+            top: -23px;
+            left: 50%;
+            transform: translate(-50%,-23px);
+            padding: 80px 0px 69px 0px;
+
+            @include mq($until: tablet) {
+                position: relative;
+                width: 100%;
+                top: 0px;
+                left: 0%;
+                transform: translate(-0%,-0px);
+                padding: 80px 20px 69px 20px;
+            }
+
+            .explore-content {
+                width: 400px;
+                text-align: center;
+
+                .sub-title {
+                    margin-bottom: 11px;
+                    font-size: 13px;
+                }
+
+                h2{
+                    color: $-accent;
+                    line-height: 1;
+                    margin-bottom: 21px;
+
+                    @include mq($until: tablet) {
+                        font-size: 40px;
+                    }
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 1.22;
+                    letter-spacing: normal;
+                    margin-bottom: 51px;
+                }
+
+                a{
+                    font-size: 13px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: 1.08px;
+                    text-align: center;
+                    color: $-accent;
+                }
+
+                .Path-5 {
+                    width: 160px;
+                    height: 1px;
+                    margin:0% auto;
+                    margin-top: 12px;
+                    border: solid 1.5px #fff;
+                  }
+            }
+
+            .bottom-line {
+                height: 10px;
+                background-color:$-yellow;
+                width: 100%;
+                position: absolute;
+                bottom: 0%;
+            }
+        }
+    }
+    }

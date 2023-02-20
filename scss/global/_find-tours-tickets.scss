@@ -1,0 +1,142 @@
+.ticket{
+    // margin: 0;
+    overflow: visible;
+    position: relative;
+    margin: 75px 0px 80px 0px;
+
+    @include mq($until: mobileLarge) {
+        margin: 55px 0px 132px 0px;
+    }
+
+    .ticket-content {
+        @include flex;
+        @include flex-wrap;
+        @include justify-flex-start;
+        position: relative;
+        align-items: center;
+
+        .ticket-right {
+            position: absolute;
+            width: 50%;
+            left: auto;
+            right: 0;
+
+            @include mq($until: tabletSmall) {
+                position: relative;
+                width: 100%;
+            }
+            
+
+            img {
+                height: 100%;
+                object-fit: contain;
+                object-position: center center;
+                width: 100%;
+              }
+          }
+
+          .ticket-left {
+            position: relative;
+            width: 55%;
+
+            @include mq($until: tabletSmall) {
+                position: relative;
+                width: 100%;
+            }
+
+            section{
+                &.Find-ticket {
+                    background-color: $-primary;
+                    padding: 80px 0px 30px 0px;
+                    border-right: 10px solid #e4cb45;
+
+                    .slide-content {
+                        width: 500px;
+                        margin: 0% auto;
+                        color:$-accent;
+                        text-align: center;
+                        @include mq($until: tablet) {
+                            width: 100%;
+                        }
+
+                        .slide-sub-title {
+                            font-size: 13px;
+                            font-weight: bold;
+                            text-align: center;
+                            letter-spacing: 1.08px;
+                            margin-bottom: 7px;
+                        }
+
+                        h2{
+                            color:$-accent;
+                            line-height: 1;
+                            margin-bottom:20px;
+                            font-size: 35px;
+                        }
+
+                        p {
+                            font-size: 18px;
+                            margin-bottom: 7px;
+                            line-height: 1.22;
+                            text-align: center;
+                        }
+
+                        a {
+                            font-size: 13px;
+                            font-weight: bold;
+                            letter-spacing: 1.08px;
+                            text-align: center;
+                            color: #fff;
+                        }
+
+                        .Path-5 {
+                            width: 160px;
+                            height: 1px;
+                            margin: 12px auto 0%;
+                            border: 1.5px solid rgb(255, 255, 255);
+                        }
+                    }
+
+                    .slick-arrow {
+                        position: absolute;
+                        top: 50%;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 50px;
+                        margin-top: -25px;
+                        border: none;
+                        border-radius: 50%;
+                        color: $-accent;
+                        font-size: 2rem;
+                        z-index: 300;
+                        outline: none;
+                        cursor: pointer;
+                      }
+
+                      i.fa.fa-angle-left.prev-arrow {
+                        left: 50px;
+                        display: flex !important;
+                          justify-content: center;
+                          align-items: center;
+
+                          @include mq($until: tablet) {
+                            left: 0px;
+                        }
+                      }
+
+                      i.fa.fa-angle-right.next-arrow {
+                        right: 50px;
+                        display: flex !important;
+                        justify-content: center;
+                        align-items: center;
+
+                        @include mq($until: tablet) {
+                            right: 0px;
+                        }
+                      }
+
+                }
+            }
+          }
+      }
+  }

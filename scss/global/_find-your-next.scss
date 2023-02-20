@@ -1,0 +1,137 @@
+.find-your-next{
+    position: relative;
+    .find-content {
+      max-width: 1360px;
+      margin: 0% auto;
+      @include flex;
+      @include justify-space-between
+  
+      @include mq($until: desktop) {
+        gap: 20px;
+      }
+  
+      .find-box {
+        width: 587px;
+        background: #fff;
+        height: 719px;
+        padding: 67px 75px 0px 60px;
+  
+        @include mq($until: tablet) {
+          width: 100%;
+          padding: 70px 30px 62px 30px;
+          height: auto;
+        }
+  
+        &.tablet-none{
+          @include mq($until: tablet) {
+            display: none;
+          }
+        }
+  
+        .find-sub-title {
+          font-size: 13px;
+          font-weight: bold;
+          line-height: normal;
+          letter-spacing: 1.08px;
+          margin-bottom: 8px;
+        }
+  
+        h2 {
+          text-align: left;
+          margin-bottom: 10px;
+          line-height: 1;
+  
+          @include mq($until: desktop) {
+            font-size: 28px;
+          }
+        }
+  
+        p {
+          font-size: 18px;
+          line-height: 22px;
+  
+          @include mq($until: desktop) {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  
+    .three-box {
+        @include flex;
+      gap: 20px;
+      position: absolute;
+      bottom: 20px;
+  
+      @include mq($until: tablet) {
+        position: relative;
+        bottom: 0px;
+      }
+  
+      @include mq($until: tablet) {
+        display:block;
+       }
+  
+        .box{
+          position: relative;
+  
+          @include mq($until: tablet) {
+            margin-bottom: 20px;
+          }
+  
+          &:before{
+            content: "";
+          position: absolute;
+          background-color: #111;
+          height: 100%;
+          width: 100%;
+          left: 0;
+          top: 0;
+          visibility: visible;
+          opacity: 0.5;
+          }
+  
+          img{
+            object-fit: cover;
+            height: 400px;
+            width: 100%;
+  
+            @include mq($until: mobileSmall) {
+              height: 283px;
+            }
+          }
+  
+          .box-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+  
+            a {
+              font-size: 13px;
+              font-weight: bold;
+              letter-spacing: 1.08px;
+              text-align: center;
+              color: #fff;
+          }
+  
+            .title {
+              font-size: 40px;
+              text-transform: uppercase;
+              font-family: 'Heebo-Regular';
+              color: #fff;
+              line-height: 1;
+              margin-bottom: 22px;
+          }
+  
+          .Path-5 {
+            width: 96px;
+            height: 1px;
+            margin: 12px auto 0%;
+            border: 1px solid #fff;
+        }
+        }
+        }
+  }
+  }

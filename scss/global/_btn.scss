@@ -1,0 +1,99 @@
+    .btn {
+        border: 1px solid transparent;
+        background-color: transparent;
+        -moz-border-radius: 22.5px;
+        -webkit-border-radius: 22.5px;
+        border-radius: 22.5px;
+        color: $-accent;
+        cursor: pointer;
+        height: 45px;
+        max-width: 246px;
+        font-size: 13px;
+        line-height: 1.3;
+        letter-spacing: 1.08px;
+        padding: 0px 30px;
+        position: relative;
+        width: 100%;
+        flex-wrap: nowrap;
+        outline: none;
+        margin: auto;
+        border-color: $-accent;
+        -o-transition: all 0s ease-in-out;
+        -ms-transition: all 0s ease-in-out;
+        -moz-transition: all 0s ease-in-out;
+        -webkit-transition: all 0s ease-in-out;
+        transition: all 0s ease-in-out;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-family: 'Heebo-Regular';
+        float: left;
+
+        @include mq($until: desktop) {
+            max-width: 305px;
+            width:100%;
+            float: none;
+        }
+
+        @include mq($until: tablet) {
+            max-width: 246px;
+            width:100%;
+            float: none;
+        }
+
+        &:hover {
+            background-color: $-primary;
+            color: #fff;
+            border: none;
+        }
+
+        &.solid {
+            background-color: $-primary;
+            color: $-accent;
+            border: 1px solid transparent;
+
+            @include mq($until: mobileLarge) {
+                width: 246px;
+            }
+
+            &:hover {
+                background-color:$-accent;
+                color: $-primary;
+                border: 1px solid transparent;
+            }
+        }
+
+        &.normal-solid-secondary {
+            background-color: transparent;
+
+            &:hover {
+                color: $-primary ;
+                border: $-primary;
+                background-color: $-secondary-50;
+                
+            }
+        }
+
+        &.solid-secondary {
+            background-color: $-turquoise-50;
+            color: $-primary;
+            border: $-turquoise-50;
+
+            &:hover {
+                background-color: $-secondary-80;
+            }
+        }
+
+        &.solid-shadow {
+            background-color: $-secondary-50;
+            color: $-primary;
+            border: $-turquoise-50;
+            @include box-shadow (0px 4px 10px rgba(40, 40, 50, 0.1));
+
+            &:hover {
+                @include box-shadow (0px);
+                box-shadow: none;
+            }
+        }
+    }

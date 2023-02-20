@@ -1,0 +1,98 @@
+.accordion-container {
+    @include flex;
+    @include flex-wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+
+    @include mq($until: tablet) {
+        gap: 0px;
+    }
+    .accordion-block {
+        width: 145px;
+
+        @include mq($until: desktop) {
+            width: 100%;
+        }
+
+        .custom-accordion-title {
+            @include flex;
+            @include justify-space-between;
+            pointer-events: none;
+            // padding: 18px 0;
+            font-family: 'Heebo-Regular';
+            font-weight: bold;
+
+            &:after {
+                display: none;
+
+                @include mq($until: desktop) {
+                    content: "+";
+                    color: #fff;
+                    font-size: 28px;
+                    transform: scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(90deg) translate3d(0px, 0px, 0px) skew(0deg, 0deg);
+                    display: block;
+                }
+            }
+
+
+            &.t-open {
+                &:after {
+                    transform: scale3d(1, 1, 1) rotateX(180deg) rotateY(0deg) rotateZ(45deg) translate3d(0px, 0px, 0px) skew(0deg, 0deg);
+                }
+            }
+
+            @include mq($until: desktop) {
+                pointer-events: all;
+                padding: 17px 0;
+                display: flex;
+                align-items: center;
+            }
+
+            span {
+                &.title-text {
+                    line-height: 18px;
+                    margin-bottom: 17px;
+                    color: $-accent;
+                    font-size: 13px;
+                    letter-spacing: 1.08px;
+
+                    @include mq($until: tablet) {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+
+        .custom-accordion-content {
+            display: block;
+
+            @include mq($until: desktop) {
+                display: none;
+            }
+
+            ul {
+                &.footer-menu {
+                    list-style: none;
+                    opacity: 0.9; 
+                    font-size: 12px;
+                    font-weight: 600;
+                    font-family:'Inter-Bold';
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.5;
+                    letter-spacing: normal;
+                    color: #fff;
+                    padding: 0px;
+
+                    li {
+                        a {
+                            color: $-accent;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
